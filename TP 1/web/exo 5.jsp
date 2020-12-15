@@ -1,6 +1,6 @@
 <%-- 
-    Document   : tp 4
-    Created on : 15 déc. 2020, 21:23:18
+    Document   : exo 5
+    Created on : 15 déc. 2020, 23:50:44
     Author     : Yasin
 --%>
 
@@ -12,6 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <% if (Math.random() > .5) { %>
+            <jsp:forward page="exo 9.jsp"/>
+        <% }else { %>
+            <jsp:forward page="exo 8.jsp"/>
+        <% } %>
     </body>
 </html>
+
